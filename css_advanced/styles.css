@@ -121,6 +121,67 @@ img {
     margin-bottom: 25px;
 }
 
+
+/* ---------------------------------------
+   LEARN FROM THE PROS SECTION
+----------------------------------------- */
+.pros {
+    text-align: center;
+    color: rgb(31, 29, 29);
+    padding: 80px 0;
+}
+
+.pros h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.pros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pro-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.pro-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.pro-card p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pros-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* ---------------------------------------
    POPULAR TUTORIALS
 ----------------------------------------- */
@@ -157,6 +218,140 @@ img {
     font-size: 14px;
     color: #777;
 }
+
+
+
+
+/* ---------------------------------------
+   MOST POPULAR TUTORIALS SECTION
+----------------------------------------- */
+.tutorials {
+    padding: 80px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* VIDEO CARD */
+.tutorial-card {
+    background: #edebeb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+    padding-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Thumbnail image */
+.thumbnail-wrapper {
+    position: relative;
+}
+
+.thumbnail-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+/* Play button icon */
+.thumbnail-wrapper .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    opacity: 0.9;
+}
+
+/* Title */
+.tutorial-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 20px 8px;
+}
+
+/* Description */
+.tutorial-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 20px 15px;
+}
+
+/* Instructor row */
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 20px 15px;
+}
+
+.instructor img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.instructor h4 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Rating stars */
+.stars {
+    margin: 0 20px 10px;
+    color: #C271FF; /* Purple tone from Figma */
+    font-size: 14px;
+}
+
+.stars i {
+    margin-right: 2px;
+}
+
+/* Video duration */
+.duration {
+    text-align: right;
+    margin: 0 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* -------------------------
+   RESPONSIVE
+-------------------------- */
+@media (max-width: 1000px) {
+    .tutorials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 
 /* ---------------------------------------
    TESTIMONIAL SECTION
@@ -226,6 +421,56 @@ blockquote {
     font-size: 13px;
     color: #ccc;
 }
+
+
+/* ---------------------------------------
+   F.A.Q SECTION
+----------------------------------------- */
+.faq {
+    background: #ffffff;
+    padding: 100px 0;
+}
+
+.faq-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
 
 /* ---------------------------------------
    FOOTER
