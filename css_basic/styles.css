@@ -38,3 +38,15 @@ header, footer {
     color: white;
     text-align: center;
 }
+/* optional: simple fallback for small screens */
+@media (max-width: 600px) {
+  body.works_on_smartphone main {
+    flex-direction: column; /* stack article and aside vertically on small screens */
+  }
+  body.works_on_smartphone article,
+  body.works_on_smartphone aside {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+}
