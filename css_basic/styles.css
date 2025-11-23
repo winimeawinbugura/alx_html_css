@@ -50,3 +50,106 @@ header, footer {
     height: auto;
   }
 }
+/* Flexbox layout already provided by ALX — do NOT change */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+  background: #222;
+  color: white;
+  padding: 10px 0;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* LOGO STYLE */
+.logo {
+  font-size: 30px;
+  margin-right: 30px;
+  color: #ffcc00;
+}
+
+/* MAIN LAYOUT (Already Flexbox) */
+main {
+  display: flex;
+  padding: 20px;
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-right: 2px solid #ddd;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ARTICLE — YOU CAN STYLE ANYTHING HERE! */
+article {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin: 0 20px;
+}
+
+article h1 {
+  color: #333;
+  border-bottom: 2px solid #888;
+  padding-bottom: 5px;
+}
+
+article p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ASIDE */
+aside {
+  width: 20%;
+  background: #fafafa;
+  border-left: 2px solid #ddd;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
